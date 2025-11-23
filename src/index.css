@@ -1,3 +1,168 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Fontes personalizadas */
+.font-handwriting {
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.font-journal {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.font-indie {
+  font-family: 'Indie Flower', cursive;
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+/* Efeito parallax */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Efeito polaroid */
+.polaroid {
+  background: white;
+  padding: 10px;
+  padding-bottom: 45px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Citações especiais */
+.quote-special {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  position: relative;
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.quote-special::before {
+  content: '\201C';
+  font-size: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  color: #d97706;
+}
+
+/* Transições suaves */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
+
+/* Efeito de papel rasgado */
+.torn-paper {
+  position: relative;
+  background: #fefce8;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.torn-paper::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(45deg, transparent 33.33%, #fefce8 33.33%, #fefce8 66.66%, transparent 66.66%),
+              linear-gradient(-45deg, transparent 33.33%, #fefce8 33.33%, #fefce8 66.66%, transparent 66.66%);
+  background-size: 8px 20px;
+  background-position: 0 -10px;
+}
+
+/* Container customizado com padding responsivo */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}

@@ -3,6 +3,9 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Sobre from './pages/Sobre';
+import Jornada from './pages/Jornada';
+import Citacoes from './pages/Citacoes';
+import Cartas from './pages/Cartas';
 
 export default function App() {
   return (
@@ -10,6 +13,9 @@ export default function App() {
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/jornada" component={Jornada} />
+      <Route path="/citacoes" component={Citacoes} />
+      <Route path="/cartas" component={Cartas} />
       <Route path="/sobre" component={Sobre} />
       <Route>
         <div className="min-h-screen flex items-center justify-center">

@@ -18,6 +18,15 @@ export default function Navbar() {
             <Link href="/blog">
               <a className="hover:text-amber-200 transition-colors">Blog</a>
             </Link>
+            <Link href="/jornada">
+              <a className="hover:text-amber-200 transition-colors">Jornada</a>
+            </Link>
+            <Link href="/citacoes">
+              <a className="hover:text-amber-200 transition-colors">Citações</a>
+            </Link>
+            <Link href="/cartas">
+              <a className="hover:text-amber-200 transition-colors">Cartas</a>
+            </Link>
             <Link href="/sobre">
               <a className="hover:text-amber-200 transition-colors">Sobre</a>
             </Link>
