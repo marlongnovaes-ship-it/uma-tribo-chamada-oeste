@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
+  // Menu atualizado - versão 2.0
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
