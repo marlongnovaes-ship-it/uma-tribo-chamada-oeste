@@ -10,6 +10,9 @@ export default function Footer() {
           Life is Strange™ é marca registrada da Square Enix Co., Ltd.<br />
           Este é um projeto de fã não oficial e não comercial.
         </p>
+        <p className="text-sm text-amber-200 mt-4">
+          Criado com ❤️ por <strong className="text-white">Marlon Novaes</strong>
+        </p>
       </div>
     </footer>
   );
