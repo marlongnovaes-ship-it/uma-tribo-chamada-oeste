@@ -13,7 +13,7 @@ export const posts: Post[] = [
     title: 'Dois Irmãos na Estrada',
     date: '15 de Outubro, 2023',
     excerpt: 'Conheci dois irmãos viajando sozinhos. Sean e Daniel. Garotos corajosos, fugindo de algo que eu não perguntei...',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800',
+    image: '/images/sean-road.png',
     content: `Coffeyville, Kansas. Um nome que soa como poesia americana. Cheguei lá numa tarde de outono, quando as folhas começavam a cair e o vento trazia aquele cheiro de liberdade que só a estrada conhece.
 
 Foi lá que conheci dois irmãos viajando sozinhos. Sean e Daniel Diaz. O mais velho não devia ter mais que dezesseis anos, mas tinha aquele olhar de quem já viu demais. O pequeno, Daniel, devia ter uns nove anos, ainda com aquela inocência nos olhos, mas você percebia que algo havia mudado nele.
@@ -43,7 +43,7 @@ A estrada continua. Sempre continua.`
     title: 'A Amiga Que Ficou Para Trás',
     date: '22 de Outubro, 2023',
     excerpt: 'Lyla me contou sobre seu melhor amigo que desapareceu. Sobre a dor de não saber, de não poder ajudar...',
-    image: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800',
+    image: '/images/camp-forest.png',
     content: `Seattle. Cidade grande, mas às vezes pequena demais quando você precisa de respostas.
 
 Conheci Lyla num café onde eu estava trabalhando temporariamente. Ela era do tipo que você percebe de longe - skatista, cabelo colorido, aquela energia nervosa de quem não consegue ficar parada.
@@ -81,7 +81,7 @@ Não sei se Sean e Lyla se reencontraram. Mas sei que amizades como a deles são
     title: 'Humboldt County e a Comunidade',
     date: '3 de Novembro, 2023',
     excerpt: 'Cheguei em Humboldt County procurando trabalho temporário. Encontrei uma família...',
-    image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800',
+    image: '/images/humboldt-farm.png',
     content: `Humboldt County, Califórnia. Terra de sequoias gigantes e pessoas que escolheram viver diferente. Vim procurando trabalho na colheita, encontrei muito mais.
 
 A fazenda onde trabalhei era mais que um lugar de trabalho. Era uma comunidade. Pessoas de todos os lugares, todas fugindo do sistema, todas procurando algo real.
@@ -109,7 +109,7 @@ Humboldt County me ensinou que comunidade não é sobre lugar. É sobre pessoas.
     title: 'Reflexões Sobre Liberdade',
     date: '20 de Dezembro, 2023',
     excerpt: 'O que significa ser livre? Depois de anos na estrada, ainda procuro a resposta...',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+    image: '/images/road-freedom.jpg',
     content: `Três anos na estrada. Três anos sem endereço fixo, sem rotina, sem as correntes que a sociedade chama de "segurança". E ainda me pergunto: o que é liberdade?
 
 A sociedade te vende um sonho: trabalhe duro, compre uma casa, tenha um carro, construa uma carreira. E então você será feliz. Mas eu vi muita gente com tudo isso e vazia por dentro.
@@ -147,7 +147,7 @@ Tudo é político quando você vive com os olhos abertos. Cada escolha de como v
     title: 'A Van é o Lar',
     date: '8 de Janeiro, 2024',
     excerpt: 'Minha van não é apenas um veículo. É meu lar, meu refúgio, minha liberdade sobre rodas...',
-    image: 'https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800',
+    image: '/images/brody-van.png',
     content: `Ela não é bonita. Tem ferrugem nas laterais, o motor faz um barulho estranho quando acelero demais, e o aquecedor só funciona quando quer. Mas é minha. E é tudo que preciso.
 
 Para quem vive na estrada, a van não é apenas transporte. É casa, é escritório, é refúgio. É o único espaço verdadeiramente seu num mundo que sempre quer te encaixar em alguma caixa.
@@ -185,7 +185,7 @@ A van é meu lar. E a estrada é meu endereço. E enquanto o motor roncar e as r
     title: 'Memórias Digitais',
     date: '14 de Fevereiro, 2024',
     excerpt: 'Num mundo conectado, às vezes as memórias mais importantes estão guardadas em pixels e mensagens não enviadas...',
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800',
+    image: '/images/road-journey.jpg',
     content: `Parei numa biblioteca pública em alguma cidade do Oregon. Precisava usar o computador para checar emails e procurar trabalho. Mas acabei pensando em algo diferente: memórias digitais.
 
 Nossa geração vive entre dois mundos. O físico e o digital. E às vezes, as memórias mais importantes estão guardadas não em fotos amareladas, mas em conversas de chat, em posts de redes sociais, em mensagens que nunca foram enviadas.

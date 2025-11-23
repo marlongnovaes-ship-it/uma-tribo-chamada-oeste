@@ -13,7 +13,7 @@ export default function Home() {
       <section 
         className="relative h-screen flex items-center justify-center text-white"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920)',
+          backgroundImage: 'url(/images/road-freedom.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

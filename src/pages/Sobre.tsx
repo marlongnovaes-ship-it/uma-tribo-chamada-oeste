@@ -44,6 +44,37 @@ export default function Sobre() {
                 <li>Memórias e conexões que transcendem a distância</li>
               </ul>
 
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">Cassidy - A Alma Livre</h2>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                <strong>Lucy Rose "Cassidy" Jones</strong> é uma das personagens mais marcantes de Life is Strange 2. 
+                Viajante, musicista e espírito livre, ela representa tudo que a vida na estrada pode ser: 
+                liberdade, autenticidade e recusa em se conformar.
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Com seu cabelo roxo em undercut, guitarra nas costas e corpo coberto de tatuagens, 
+                Cassidy é a personificação da filosofia nômade. Cada tatuagem conta uma história: 
+                o <strong>lobo sob o peito</strong> simboliza liberdade e lealdade, o <strong>dragão na manga</strong> 
+                representa força e transformação, a <strong>árvore arrancada</strong> mostra suas raízes cortadas, 
+                e as <strong>vespas ao redor de flores</strong> lembram que até a beleza pode picar.
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Fugindo de um lar tóxico no Texas - onde seu pai viciado em metanfetamina e seu irmão 
+                racista a ameaçaram por namorar alguém que não era branco - Cassidy escolheu a estrada. 
+                Ela viaja com Finn, Hannah e Penny, formando uma família escolhida baseada em respeito mútuo, 
+                não em sangue.
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                "Eu não vou me estabelecer, de jeito nenhum! É assim que a merda começa, sabe? 
+                Quando você começa a ter coisas suas. Coisas que você precisa defender." 
+                Essa frase resume sua filosofia: verdadeira liberdade significa não ter nada que te prenda.
+              </p>
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                Em Humboldt County, Cassidy trabalha na fazenda de cannabis junto com Sean e Daniel, 
+                sempre sonhando com algo maior, sempre reclamando do trabalho chato, mas sempre leal 
+                aos amigos. Ela canta ao redor da fogueira, compartilha histórias, e oferece a Sean 
+                uma tatuagem de lobo - símbolo de pertencimento à tribo.
+              </p>
+
               <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">A Tribo</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Uma tribo não é definida por sangue ou geografia. É definida por valores compartilhados, 
