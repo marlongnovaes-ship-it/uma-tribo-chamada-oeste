@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Sobre from './pages/Sobre';
-import Jornada from './pages/Jornada';
+
 import Citacoes from './pages/Citacoes';
 import Cartas from './pages/Cartas';
 
