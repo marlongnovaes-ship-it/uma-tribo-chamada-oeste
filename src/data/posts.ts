@@ -9,6 +9,90 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: 'esteban-diaz-o-pai-heroi',
+    title: 'Esteban Diaz: O Pai Herói',
+    date: '10 de Setembro, 2023',
+    excerpt: 'Conheci Esteban Diaz em Seattle. Um pai solteiro, mecânico, que criava dois filhos sozinho. Um herói comum...',
+    image: '/images/sean-daniel.jpg',
+    content: `Seattle, 2016. Antes de tudo mudar.
+
+Conheci Esteban Diaz num evento comunitário. Ele estava lá com os dois filhos - Sean, um adolescente quieto mas atento, e Daniel, uma criança cheia de energia.
+
+Esteban era mecânico. Trabalhava duro, turnos longos, mas sempre arranjava tempo para os meninos. Vi como ele olhava para eles - não com obrigação, mas com amor genuíno. O tipo de amor que sacrifica sem esperar nada em troca.
+
+"Minha esposa nos deixou quando Daniel era bebê", ele me contou enquanto tomávamos café. "Não foi fácil. Mas esses garotos são tudo para mim. Eu faria qualquer coisa por eles."
+
+E ele fez. Ensinou Sean a desenhar, a ser responsável, a cuidar do irmão. Ensinou Daniel sobre bondade, sobre justiça, sobre ser uma boa pessoa num mundo que nem sempre é bom.
+
+Esteban era imigrante mexicano. Veio para os Estados Unidos jovem, trabalhou em empregos que ninguém queria, economizou cada centavo, construiu uma vida. E criou dois meninos incríveis.
+
+"Eu quero que eles tenham oportunidades que eu não tive", ele disse. "Quero que Sean vá para a faculdade. Quero que Daniel cresça sem medo."
+
+Vi Esteban pela última vez numa tarde de outubro. Ele estava pegando os meninos na escola, sorrindo, fazendo piadas. Um pai normal, num dia normal.
+
+Não sabia que seria a última vez.
+
+Dias depois, ouvi a notícia. Esteban Diaz havia morrido. Um policial o matou. As circunstâncias eram confusas, as versões contraditórias. Mas o resultado era o mesmo: dois meninos ficaram órfãos.
+
+Sean e Daniel desapareceram depois disso. Fugiram. E eu entendo por quê. Porque num mundo que mata seu pai sem razão, ficar não é opção.
+
+Esteban não era perfeito. Mas era um bom homem. Um bom pai. E seus filhos carregam suas lições em cada passo da jornada.
+
+"Meu pai sempre dizia: 'Sejam fortes, mas sejam bondosos'", Sean me disse uma vez, meses depois, quando nos reencontramos na estrada.
+
+Esteban Diaz vive em seus filhos. Na coragem de Sean. Na inocência de Daniel. No amor que eles têm um pelo outro.
+
+Ele era um herói. Não o tipo que usa capa. O tipo que acorda cedo, trabalha duro, e ama incondicionalmente. O tipo que o mundo precisa mais.`
+  },
+  {
+    slug: 'lyla-park-a-amiga-incondicional',
+    title: 'Lyla Park: A Amiga Incondicional',
+    date: '18 de Setembro, 2023',
+    excerpt: 'Lyla Park não dormia há dias. Seu melhor amigo havia desaparecido, e o mundo a tratava como cúmplice...',
+    image: '/images/lyla.png',
+    content: `Seattle, dias após o desaparecimento.
+
+Lyla Park estava sentada no skate park onde costumava andar com Sean. Mas não estava andando. Apenas sentada, olhando o vazio, o celular na mão.
+
+"Ele vai ligar", ela repetia para si mesma. "Ele tem que ligar."
+
+Conheci Lyla através de amigos em comum. Ela estava destruída. Não apenas pela ausência de Sean, mas pela forma como todos a tratavam.
+
+A polícia a interrogou por horas. "Você sabia dos planos dele?" "Ele te contou algo?" "Você está escondendo informação?"
+
+Como se ela fosse criminosa por ser amiga de alguém que o sistema decidiu caçar.
+
+Na escola, os olhares. Os sussurros. Alguns a evitavam, como se a tragédia fosse contagiosa. Outros faziam perguntas invasivas, buscando fofoca, não empatia.
+
+"Eu só queria saber se ele está bem", ela me disse, lágrimas escorrendo. "Eu não ligo para o resto. Só quero saber se ele e o Daniel estão seguros."
+
+Lyla sempre teve insônia. Desde criança. Mas agora era pior. Passava as noites acordada, checando notícias, redes sociais, qualquer pista.
+
+Seu terapeuta aumentou a medicação. Sua mãe estava preocupada. Mas Lyla não conseguia desligar. Porque Sean era mais que amigo. Era irmão de alma.
+
+Eles cresceram juntos. Skate, videogames, conversas sobre tudo e nada. Sean era a pessoa que entendia Lyla quando ninguém mais entendia.
+
+"A gente tinha planos", ela me contou. "Depois da escola, íamos viajar juntos. Ver o mundo. Ser livres."
+
+Mas a vida tinha outros planos.
+
+Quando Sean finalmente ligou - uma ligação rápida, de um motel, interrompida - Lyla ficou horas olhando o telefone, repassando cada palavra.
+
+"Ele disse que me amava", ela sussurrou. "Como irmã. Disse que sentia muito. E desligou."
+
+Lyla defendia Sean online. Cada comentário maldoso, cada julgamento, ela estava lá, lutando. "Vocês não conhecem a história toda", ela escrevia. "Vocês não conhecem ele."
+
+E ela estava certa. O mundo via um fugitivo. Ela via um amigo. Um irmão. Alguém que faria qualquer coisa para proteger a família.
+
+"Se eu pudesse", Lyla me disse, "eu iria atrás dele. Ajudaria. Mas sei que não posso. Então faço o que posso: mantenho viva a memória de quem ele realmente é."
+
+Lyla Park me ensinou que amizade verdadeira não precisa de presença física. Ela sobrevive à distância, ao tempo, às circunstâncias.
+
+Ela me ensinou que lealdade não é concordar com tudo. É estar lá, mesmo quando o mundo inteiro está contra.
+
+Não sei se Sean e Lyla se reencontraram. Mas sei que, onde quer que ele esteja, ele carrega a amizade dela no coração. E isso é mais poderoso que qualquer distância.`
+  },
+  {
     slug: 'dois-irmaos-na-estrada',
     title: 'Dois Irmãos na Estrada',
     date: '15 de Outubro, 2023',
