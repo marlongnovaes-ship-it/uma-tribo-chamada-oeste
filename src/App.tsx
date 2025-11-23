@@ -6,6 +6,11 @@ import Sobre from './pages/Sobre';
 import Jornada from './pages/Jornada';
 import Citacoes from './pages/Citacoes';
 import Cartas from './pages/Cartas';
+import MapaInterativo from './pages/MapaInterativo';
+import Irmaos from './pages/Irmaos';
+import Galeria from './pages/Galeria';
+import Escolhas from './pages/Escolhas';
+import Tatuagem from './pages/Tatuagem';
 import MusicPlayer from './components/MusicPlayer';
 
 export default function App() {
@@ -17,6 +22,11 @@ export default function App() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/jornada" component={Jornada} />
+      <Route path="/mapa" component={MapaInterativo} />
+      <Route path="/irmaos" component={Irmaos} />
+      <Route path="/galeria" component={Galeria} />
+      <Route path="/escolhas" component={Escolhas} />
+      <Route path="/tatuagem" component={Tatuagem} />
       <Route path="/citacoes" component={Citacoes} />
       <Route path="/cartas" component={Cartas} />
       <Route path="/sobre" component={Sobre} />
