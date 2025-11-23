@@ -166,3 +166,67 @@ a, button {
     max-width: 1280px;
   }
 }
+
+/* Otimizações Mobile */
+@media (max-width: 768px) {
+  /* Textos menores no mobile */
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  /* Padding reduzido */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Imagens responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Cards menores */
+  .polaroid {
+    padding: 8px;
+    padding-bottom: 35px;
+  }
+  
+  /* Citações menores */
+  .quote-special {
+    font-size: 1.1rem;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  
+  .quote-special::before {
+    font-size: 3rem;
+  }
+  
+  /* Espaçamento reduzido */
+  .space-y-8 > * + * {
+    margin-top: 1.5rem;
+  }
+  
+  .space-y-12 > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/* Melhorias para telas muito pequenas */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  .font-journal {
+    font-size: 1rem;
+  }
+}

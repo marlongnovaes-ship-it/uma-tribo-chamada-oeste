@@ -6,10 +6,13 @@ import Sobre from './pages/Sobre';
 import Jornada from './pages/Jornada';
 import Citacoes from './pages/Citacoes';
 import Cartas from './pages/Cartas';
+import MusicPlayer from './components/MusicPlayer';
 
 export default function App() {
   return (
-    <Switch>
+    <>
+      <MusicPlayer />
+      <Switch>
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
@@ -28,5 +31,6 @@ export default function App() {
         </div>
       </Route>
     </Switch>
+    </>
   );
 }
