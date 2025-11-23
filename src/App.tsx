@@ -1,24 +1,26 @@
 import { Route, Switch } from 'wouter';
-
-function Home() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
-      <div className="container mx-auto px-4 py-20">
-        <h1 className="text-6xl font-bold text-center mb-8 text-amber-900">
-          Uma Tribo Chamada Oeste
-        </h1>
-        <p className="text-2xl text-center text-gray-700 max-w-3xl mx-auto">
-          Histórias da estrada. Encontros que mudam vidas. A jornada nunca termina.
-        </p>
-      </div>
-    </div>
-  );
-}
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
+import Sobre from './pages/Sobre';
 
 export default function App() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/sobre" component={Sobre} />
+      <Route>
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">404 - Página não encontrada</h1>
+            <a href="/" className="text-amber-600 hover:text-amber-700">
+              Voltar para o início
+            </a>
+          </div>
+        </div>
+      </Route>
     </Switch>
   );
 }
