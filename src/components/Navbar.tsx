@@ -7,9 +7,7 @@ export default function Navbar() {
 
   const links = [
     { href: '/', label: 'Início' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/mapa', label: 'Mapa' },
-    { href: '/irmaos', label: 'Irmãos' },
+    { href: '/blog', label: 'Diário' },
     { href: '/galeria', label: 'Galeria' },
     { href: '/escolhas', label: 'Escolhas' },
     { href: '/tatuagem', label: 'Tatuagem' },
@@ -69,6 +67,14 @@ export default function Navbar() {
                     {link.label}
                   </a>
                 </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
               ))}
             </div>
           </div>
