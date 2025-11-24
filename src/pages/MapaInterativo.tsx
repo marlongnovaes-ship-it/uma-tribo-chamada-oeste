@@ -95,12 +95,12 @@ export default function MapaInterativo() {
   const colorClasses = {
     blue: "bg-blue-500 hover:bg-blue-600 border-blue-600",
     green: "bg-green-500 hover:bg-green-600 border-green-600",
-    amber: "bg-amber-500 hover:bg-amber-600 border-amber-600",
-    orange: "bg-orange-500 hover:bg-orange-600 border-orange-600"
+    amber: "bg-lis2-rust hover:bg-lis2-rust border-lis2-rust",
+    orange: "bg-lis2-rust hover:bg-orange-600 border-orange-600"
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-amber-50">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-orange-50">
       <Navbar />
       
       <div className="pt-24 pb-20">
@@ -111,12 +111,12 @@ export default function MapaInterativo() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Mapa da Jornada</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Mapa da Jornada</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-4">
               De Seattle a Puerto Lobos. Mais de 2.000 milhas de estrada, incontáveis escolhas, 
               e uma jornada que transformou dois irmãos para sempre.
             </p>
-            <p className="text-amber-700 font-semibold">
+            <p className="text-lis2-rust font-semibold">
               📍 Clique nos marcadores para explorar cada local
             </p>
           </motion.div>
@@ -126,7 +126,7 @@ export default function MapaInterativo() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative bg-gradient-to-br from-amber-100 to-orange-100 rounded-lg shadow-2xl p-8 mb-12"
+            className="relative bg-gradient-to-br from-orange-100 to-orange-100 rounded-lg shadow-2xl p-8 mb-12"
             style={{ minHeight: "600px" }}
           >
             {/* Linha da jornada */}
@@ -203,11 +203,11 @@ export default function MapaInterativo() {
                   <span>Refúgio</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-amber-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-lis2-rust"></div>
                   <span>Comunidade</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-orange-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-lis2-rust"></div>
                   <span>Destino</span>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function MapaInterativo() {
           {/* Estatísticas da Jornada */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <p className="text-4xl font-bold text-amber-600 mb-2">2,000+</p>
+              <p className="text-4xl font-bold text-lis2-rust mb-2">2,000+</p>
               <p className="text-gray-700">Milhas Percorridas</p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
@@ -254,7 +254,7 @@ export default function MapaInterativo() {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
-              <div className="sticky top-0 bg-gradient-to-r from-amber-600 to-orange-600 text-white p-6 flex justify-between items-start">
+              <div className="sticky top-0 bg-gradient-to-r from-lis2-rust to-orange-700 text-white p-6 flex justify-between items-start">
                 <div>
                   <h2 className="text-3xl font-bold mb-2">{selectedLocation.name}, {selectedLocation.state}</h2>
                   <div className="flex items-center gap-4 text-sm">
@@ -296,7 +296,7 @@ export default function MapaInterativo() {
                   <ul className="space-y-2">
                     {selectedLocation.keyEvents.map((event, index) => (
                       <li key={index} className="flex items-start gap-2 text-gray-700">
-                        <span className="text-amber-500 font-bold">•</span>
+                        <span className="text-lis2-rust font-bold">•</span>
                         {event}
                       </li>
                     ))}

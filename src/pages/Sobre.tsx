@@ -14,7 +14,7 @@ export default function Sobre() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl font-bold mb-8 text-amber-900">Sobre Uma Tribo Chamada Oeste</h1>
+            <h1 className="text-5xl font-bold mb-8 text-orange-900">Sobre Uma Tribo Chamada Oeste</h1>
 
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -23,7 +23,7 @@ export default function Sobre() {
                 Cassidy e tantos outros que aparecem em <strong>Life is Strange 2</strong>.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">A Filosofia da Estrada</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-orange-800">A Filosofia da Estrada</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 "Tudo é político" - essa frase de Brody resume a essência deste espaço. 
                 Quando você vive à margem da sociedade, cada escolha se torna um ato político. 
@@ -31,7 +31,7 @@ export default function Sobre() {
                 Escolher viver de verdade ao invés de apenas existir.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">As Histórias</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-orange-800">As Histórias</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Cada post neste blog é inspirado nos encontros, nas jornadas e nas filosofias 
                 dos personagens de Life is Strange 2. São histórias sobre:
@@ -44,7 +44,7 @@ export default function Sobre() {
                 <li>Memórias e conexões que transcendem a distância</li>
               </ul>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">Cassidy - A Alma Livre</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-orange-800">Cassidy - A Alma Livre</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 <strong>Lucy Rose "Cassidy" Jones</strong> é uma das personagens mais marcantes de Life is Strange 2. 
                 Viajante, musicista e espírito livre, ela representa tudo que a vida na estrada pode ser: 
@@ -75,7 +75,7 @@ export default function Sobre() {
                 uma tatuagem de lobo - símbolo de pertencimento à tribo.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">A Tribo</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-orange-800">A Tribo</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Uma tribo não é definida por sangue ou geografia. É definida por valores compartilhados, 
                 por experiências vividas juntos, por escolher estar presente uns para os outros.
@@ -86,7 +86,7 @@ export default function Sobre() {
                 para criar algo melhor.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">Sobre Life is Strange 2</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-orange-800">Sobre Life is Strange 2</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 <strong>Life is Strange 2</strong> é um jogo episódico desenvolvido pela Dontnod Entertainment 
                 e publicado pela Square Enix. Lançado entre 2018 e 2019, conta a história de Sean e Daniel Diaz, 
@@ -98,15 +98,15 @@ export default function Sobre() {
                 o que realmente importa na vida.
               </p>
 
-              <div className="bg-amber-100 p-6 rounded-lg mt-12">
+              <div className="bg-orange-100 p-6 rounded-lg mt-12">
                 <p className="text-center text-gray-700 italic">
                   "A estrada nunca termina. E enquanto houver pessoas dispostas a viver com os olhos abertos, 
                   a tribo continuará crescendo."
                 </p>
-                <p className="text-center text-amber-700 font-semibold mt-4">— Brody Holloway</p>
+                <p className="text-center text-lis2-rust font-semibold mt-4">— Brody Holloway</p>
               </div>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-amber-800">Aviso Legal</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6 text-orange-800">Aviso Legal</h2>
               <p className="text-sm text-gray-600 mb-4">
                 Este é um projeto de fã não oficial e não comercial. <strong>Life is Strange™</strong> e 
                 todos os personagens relacionados são marcas registradas da Square Enix Co., Ltd. 

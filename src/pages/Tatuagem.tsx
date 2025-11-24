@@ -19,7 +19,7 @@ export default function Tatuagem() {
           >
             <div className="text-8xl mb-6">🐺</div>
             <h1 className="text-6xl font-bold mb-6">A Tatuagem do Lobo</h1>
-            <p className="text-2xl text-amber-200 max-w-3xl mx-auto">
+            <p className="text-2xl text-orange-200 max-w-3xl mx-auto">
               Mais que tinta na pele. Um símbolo de pertencimento, liberdade e identidade.
             </p>
           </motion.div>
@@ -115,7 +115,7 @@ export default function Tatuagem() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            className="bg-gradient-to-r from-amber-800/30 to-orange-800/30 backdrop-blur-sm rounded-lg p-10 mb-12 border-2 border-amber-500/50"
+            className="bg-gradient-to-r from-amber-800/30 to-orange-800/30 backdrop-blur-sm rounded-lg p-10 mb-12 border-2 border-lis2-rust/50"
           >
             <h2 className="text-3xl font-bold mb-6 text-amber-300">Cassidy e a Filosofia da Tatuagem</h2>
             
@@ -130,8 +130,8 @@ export default function Tatuagem() {
               "Você é um de nós agora," ela diz. "Parte da tribo."
             </p>
             
-            <div className="bg-black/30 p-6 rounded-lg border-l-4 border-amber-500">
-              <p className="text-xl font-handwriting text-amber-200 italic">
+            <div className="bg-black/30 p-6 rounded-lg border-l-4 border-lis2-rust">
+              <p className="text-xl font-handwriting text-orange-200 italic">
                 "Tatuagens são histórias que você escolhe carregar na pele. 
                 Não importa onde você vá, elas vão com você. Como cicatrizes, mas bonitas."
               </p>
@@ -160,7 +160,7 @@ export default function Tatuagem() {
               Ele é um lobo. Parte de algo maior.
             </p>
             
-            <p className="text-lg leading-relaxed font-semibold text-amber-200">
+            <p className="text-lg leading-relaxed font-semibold text-orange-200">
               E quando Daniel vê a tatuagem, seus olhos brilham. "Somos lobos, Sean. 
               Nós dois. Lobos irmãos."
             </p>
@@ -171,7 +171,7 @@ export default function Tatuagem() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.3 }}
-            className="bg-gradient-to-br from-gray-900 to-amber-900 rounded-lg p-10 border-2 border-amber-500"
+            className="bg-gradient-to-br from-gray-900 to-amber-900 rounded-lg p-10 border-2 border-lis2-rust"
           >
             <h2 className="text-3xl font-bold mb-6 text-center">O Lobo ao Longo da Jornada</h2>
             
@@ -200,7 +200,7 @@ export default function Tatuagem() {
                 </li>
               </ul>
               
-              <p className="font-bold text-amber-200 text-xl mt-6">
+              <p className="font-bold text-orange-200 text-xl mt-6">
                 O lobo não é apenas um símbolo. É a essência da jornada: 
                 liberdade, lealdade, sobrevivência e família.
               </p>

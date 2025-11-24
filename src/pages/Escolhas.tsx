@@ -87,7 +87,7 @@ const choices: Choice[] = [
 
 export default function Escolhas() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-amber-50">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-orange-50">
       <Navbar />
       
       <div className="pt-24 pb-20">
@@ -99,14 +99,14 @@ export default function Escolhas() {
             className="text-center mb-16"
           >
             <div className="flex justify-center mb-6">
-              <Scale className="w-16 h-16 text-amber-600" />
+              <Scale className="w-16 h-16 text-lis2-rust" />
             </div>
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Escolhas</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Escolhas</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-4">
               Não existem respostas certas. Apenas consequências. Cada decisão molda não apenas o futuro, 
               mas quem você e Daniel se tornam.
             </p>
-            <p className="text-lg font-handwriting text-amber-800 italic">
+            <p className="text-lg font-handwriting text-orange-800 italic">
               "Toda escolha tem um peso. E eu carrego todas elas." — Sean Diaz
             </p>
           </motion.div>
@@ -122,7 +122,7 @@ export default function Escolhas() {
                 className="bg-white rounded-lg shadow-xl overflow-hidden sketch-border lis2-card magic-particles"
               >
                 {/* Header */}
-                <div className="bg-gradient-to-r from-amber-600 to-orange-600 text-white p-6">
+                <div className="bg-gradient-to-r from-lis2-rust to-orange-700 text-white p-6">
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">
                       {choice.icon === 'heart' && <Heart className="w-8 h-8" />}
@@ -160,12 +160,12 @@ export default function Escolhas() {
                     </div>
 
                     {/* Opção B */}
-                    <div className="bg-amber-50 border-2 border-amber-300 rounded-lg p-6 choice-button" style={{background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.1))'}}>
+                    <div className="bg-orange-50 border-2 border-orange-300 rounded-lg p-6 choice-button" style={{background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.1))'}}>
                       <div className="flex items-center gap-2 mb-3">
-                        <div className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold">
+                        <div className="w-8 h-8 bg-lis2-rust text-white rounded-full flex items-center justify-center font-bold">
                           B
                         </div>
-                        <h4 className="font-bold text-lg text-amber-900">{choice.optionB.label}</h4>
+                        <h4 className="font-bold text-lg text-orange-900">{choice.optionB.label}</h4>
                       </div>
                       <p className="text-gray-700 text-sm leading-relaxed">
                         {choice.optionB.consequence}
@@ -174,7 +174,7 @@ export default function Escolhas() {
                   </div>
 
                   {/* Reflexão */}
-                  <div className="bg-gray-50 border-l-4 border-amber-500 p-6 rounded">
+                  <div className="bg-gray-50 border-l-4 border-lis2-rust p-6 rounded">
                     <p className="text-gray-800 italic leading-relaxed">
                       💭 <strong>Reflexão:</strong> {choice.reflection}
                     </p>
@@ -205,7 +205,7 @@ export default function Escolhas() {
                 nenhum adolescente de 16 anos deveria carregar sozinho.
               </p>
               
-              <p className="font-bold text-amber-200">
+              <p className="font-bold text-orange-200">
                 No final, não importa se você fez as escolhas "certas". Importa que você viveu 
                 com as consequências. E que, apesar de tudo, continuou sendo humano.
               </p>

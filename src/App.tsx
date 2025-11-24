@@ -35,7 +35,7 @@ export default function App() {
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">404 - Página não encontrada</h1>
-            <a href="/" className="text-amber-600 hover:text-amber-700">
+            <a href="/" className="text-lis2-rust hover:text-lis2-rust">
               Voltar para o início
             </a>
           </div>

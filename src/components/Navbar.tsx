@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/">
-            <a className="text-lg md:text-xl font-bold hover:text-amber-200 transition-colors" onClick={closeMenu}>
+            <a className="text-lg md:text-xl font-bold hover:text-orange-200 transition-colors" onClick={closeMenu}>
               Uma Tribo Chamada Oeste
             </a>
           </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a className="hover:text-amber-200 transition-colors text-sm lg:text-base">
+                <a className="hover:text-orange-200 transition-colors text-sm lg:text-base">
                   {link.label}
                 </a>
               </Link>

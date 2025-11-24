@@ -60,7 +60,7 @@ export default function Galeria() {
   const [selectedDrawing, setSelectedDrawing] = useState<Drawing | null>(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-orange-50">
       <Navbar />
       
       <div className="pt-24 pb-20">
@@ -72,14 +72,14 @@ export default function Galeria() {
             className="text-center mb-16"
           >
             <div className="flex justify-center mb-6">
-              <Palette className="w-16 h-16 text-amber-600" />
+              <Palette className="w-16 h-16 text-lis2-rust" />
             </div>
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Galeria de Arte do Sean</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Galeria de Arte do Sean</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-4">
               Através dos olhos de um artista em fuga. Cada desenho é uma janela para os sentimentos, 
               memórias e momentos que definiram a jornada de Sean e Daniel.
             </p>
-            <p className="text-lg font-handwriting text-amber-800 italic">
+            <p className="text-lg font-handwriting text-orange-800 italic">
               "Desenhar é minha forma de processar tudo que aconteceu. É como se, ao colocar no papel, 
               eu pudesse entender melhor." — Sean Diaz
             </p>
@@ -105,7 +105,7 @@ export default function Galeria() {
                 </div>
                 <div className="mt-4 text-center">
                   <h3 className="font-bold text-lg text-gray-800 mb-1">{drawing.title}</h3>
-                  <p className="text-sm text-amber-600 font-semibold">{drawing.location}</p>
+                  <p className="text-sm text-lis2-rust font-semibold">{drawing.location}</p>
                   <p className="text-xs text-gray-500 mt-2 italic">{drawing.emotion}</p>
                 </div>
               </motion.div>
@@ -117,9 +117,9 @@ export default function Galeria() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="mt-16 bg-amber-100 p-8 rounded-lg torn-paper"
+            className="mt-16 bg-orange-100 p-8 rounded-lg torn-paper"
           >
-            <h3 className="text-2xl font-bold text-amber-900 mb-4">Nota do Artista</h3>
+            <h3 className="text-2xl font-bold text-orange-900 mb-4">Nota do Artista</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
               Meu sketchbook é mais que um caderno de desenhos. É meu diário, meu terapeuta, 
               meu refúgio. Quando tudo ao redor está caótico, quando não sei o que fazer, 
@@ -133,7 +133,7 @@ export default function Galeria() {
               Papai sempre dizia que a arte é a forma mais honesta de se expressar. 
               Acho que ele estava certo.
             </p>
-            <p className="text-right text-amber-800 font-handwriting text-xl mt-4">
+            <p className="text-right text-orange-800 font-handwriting text-xl mt-4">
               — Sean Diaz
             </p>
           </motion.div>
@@ -176,17 +176,17 @@ export default function Galeria() {
                 
                 <div className="space-y-4">
                   <div>
-                    <p className="text-sm text-amber-600 font-semibold mb-1">Local</p>
+                    <p className="text-sm text-lis2-rust font-semibold mb-1">Local</p>
                     <p className="text-gray-700">{selectedDrawing.location}</p>
                   </div>
                   
                   <div>
-                    <p className="text-sm text-amber-600 font-semibold mb-1">Emoção</p>
+                    <p className="text-sm text-lis2-rust font-semibold mb-1">Emoção</p>
                     <p className="text-gray-700">{selectedDrawing.emotion}</p>
                   </div>
                   
                   <div>
-                    <p className="text-sm text-amber-600 font-semibold mb-1">Sobre o desenho</p>
+                    <p className="text-sm text-lis2-rust font-semibold mb-1">Sobre o desenho</p>
                     <p className="text-gray-700 leading-relaxed font-journal text-lg">
                       {selectedDrawing.description}
                     </p>

@@ -56,7 +56,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-4xl font-bold mb-6 text-amber-900">A Estrada Nunca Termina</h2>
+            <h2 className="text-4xl font-bold mb-6 text-orange-900">A Estrada Nunca Termina</h2>
             <p className="text-lg text-gray-700 mb-4">
               Este blog é sobre liberdade, encontros inesperados e as histórias que encontramos pelo caminho. 
               Inspirado nas viagens de Brody Holloway e Cassidy, dois espíritos livres que escolheram a estrada como lar.
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-amber-50">
+      <section className="py-20 bg-orange-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <motion.div
@@ -80,8 +80,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-lg shadow-lg text-center"
             >
-              <BookOpen className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-amber-900">Blog de Viagens</h3>
+              <BookOpen className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-orange-900">Blog de Viagens</h3>
               <p className="text-gray-700">
                 Histórias autênticas da estrada, escritas com o coração e a honestidade de quem vive cada momento.
               </p>
@@ -94,8 +94,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-lg shadow-lg text-center"
             >
-              <MapPin className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-amber-900">Lugares Reais</h3>
+              <MapPin className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-orange-900">Lugares Reais</h3>
               <p className="text-gray-700">
                 De Coffeyville a Humboldt County, cada local tem uma história e uma lição para ensinar.
               </p>
@@ -108,8 +108,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-lg shadow-lg text-center"
             >
-              <Users className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-amber-900">Pessoas Verdadeiras</h3>
+              <Users className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-orange-900">Pessoas Verdadeiras</h3>
               <p className="text-gray-700">
                 Conhecendo Brody, Cassidy e outros viajantes que escolheram viver fora do convencional.
               </p>
@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 bg-amber-700 text-white">
+      <section className="py-20 bg-lis2-rust text-white">
         <div className="container mx-auto px-4">
           <motion.blockquote
             initial={{ opacity: 0 }}
@@ -132,7 +132,7 @@ export default function Home() {
               "Tudo é político, Sean. O que você e seu irmão têm é a coisa mais importante. 
               A estrada nunca termina."
             </p>
-            <footer className="text-xl text-amber-200">— Brody Holloway</footer>
+            <footer className="text-xl text-orange-200">— Brody Holloway</footer>
           </motion.blockquote>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-6 text-amber-900">Pronto para a Jornada?</h2>
+            <h2 className="text-4xl font-bold mb-6 text-orange-900">Pronto para a Jornada?</h2>
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
               Explore os posts do blog e descubra as histórias que moldaram a filosofia de viver livre na estrada.
             </p>

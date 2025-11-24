@@ -70,7 +70,7 @@ const choices = [
 
 export default function Irmaos() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-amber-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-orange-50 to-orange-50">
       <Navbar />
       
       <div className="pt-24 pb-20">
@@ -83,9 +83,9 @@ export default function Irmaos() {
             className="text-center mb-16"
           >
             <div className="flex justify-center mb-6">
-              <Users className="w-16 h-16 text-amber-600" />
+              <Users className="w-16 h-16 text-lis2-rust" />
             </div>
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Irmãos</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Irmãos</h1>
             <p className="text-2xl text-gray-700 max-w-3xl mx-auto mb-6">
               Sean & Daniel Diaz
             </p>
@@ -111,7 +111,7 @@ export default function Irmaos() {
 
           {/* Momentos Marcantes */}
           <div className="mb-20">
-            <h2 className="text-4xl font-bold text-center mb-12 text-amber-900">Momentos que Definiram o Vínculo</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-orange-900">Momentos que Definiram o Vínculo</h2>
             
             <div className="space-y-8">
               {moments.map((moment, index) => (
@@ -126,14 +126,14 @@ export default function Irmaos() {
                     <div className="flex-shrink-0">
                       {moment.icon === 'heart' && <Heart className="w-8 h-8 text-red-500" />}
                       {moment.icon === 'shield' && <Shield className="w-8 h-8 text-blue-500" />}
-                      {moment.icon === 'star' && <Star className="w-8 h-8 text-amber-500" />}
+                      {moment.icon === 'star' && <Star className="w-8 h-8 text-lis2-rust" />}
                     </div>
                     
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-gray-800 mb-3">{moment.title}</h3>
                       <p className="text-gray-700 leading-relaxed mb-4">{moment.description}</p>
-                      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
-                        <p className="text-amber-800 font-semibold text-sm">
+                      <div className="bg-orange-50 border-l-4 border-lis2-rust p-4 rounded">
+                        <p className="text-orange-800 font-semibold text-sm">
                           💡 {moment.impact}
                         </p>
                       </div>
@@ -151,15 +151,15 @@ export default function Irmaos() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="mb-20"
           >
-            <h2 className="text-4xl font-bold text-center mb-12 text-amber-900">Dilemas do Irmão Mais Velho</h2>
+            <h2 className="text-4xl font-bold text-center mb-12 text-orange-900">Dilemas do Irmão Mais Velho</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {choices.map((choice, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
+                  className="bg-gradient-to-br from-orange-100 to-orange-100 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <h3 className="text-xl font-bold text-amber-900 mb-3">{choice.dilemma}</h3>
+                  <h3 className="text-xl font-bold text-orange-900 mb-3">{choice.dilemma}</h3>
                   <p className="text-gray-700 leading-relaxed">{choice.description}</p>
                 </div>
               ))}
@@ -171,9 +171,9 @@ export default function Irmaos() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="bg-gradient-to-r from-blue-100 via-amber-100 to-orange-100 rounded-lg p-10 shadow-2xl torn-paper"
+            className="bg-gradient-to-r from-blue-100 via-orange-100 to-orange-100 rounded-lg p-10 shadow-2xl torn-paper"
           >
-            <h2 className="text-3xl font-bold text-center mb-8 text-amber-900">O Que Significa Ser Irmão</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 text-orange-900">O Que Significa Ser Irmão</h2>
             
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p className="text-lg">
@@ -188,15 +188,15 @@ export default function Irmaos() {
                 assustados em uma força imparável.
               </p>
               
-              <p className="text-lg font-semibold text-amber-800">
+              <p className="text-lg font-semibold text-orange-800">
                 No final, não importa onde a estrada os leve. Importa que eles caminhem juntos.
               </p>
               
-              <div className="border-t-2 border-amber-300 pt-6 mt-8">
+              <div className="border-t-2 border-orange-300 pt-6 mt-8">
                 <p className="text-2xl font-handwriting text-center text-gray-800">
                   "Nós somos lobos. E lobos protegem a matilha."
                 </p>
-                <p className="text-center text-amber-700 font-semibold mt-2">— Sean Diaz</p>
+                <p className="text-center text-lis2-rust font-semibold mt-2">— Sean Diaz</p>
               </div>
             </div>
           </motion.div>
@@ -210,11 +210,11 @@ export default function Irmaos() {
               <p className="text-right text-blue-700 font-semibold">— Sean</p>
             </div>
             
-            <div className="bg-amber-50 p-6 rounded-lg shadow-lg">
+            <div className="bg-orange-50 p-6 rounded-lg shadow-lg">
               <p className="text-lg font-journal text-gray-800 mb-4">
                 "Você é o melhor irmão do mundo, Sean. Eu confio em você."
               </p>
-              <p className="text-right text-amber-700 font-semibold">— Daniel</p>
+              <p className="text-right text-lis2-rust font-semibold">— Daniel</p>
             </div>
           </div>
         </div>

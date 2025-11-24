@@ -74,7 +74,7 @@ const quotes: Quote[] = [
 
 export default function Citacoes() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-orange-50">
       <Navbar />
       
       <div className="pt-24 pb-20">
@@ -85,7 +85,7 @@ export default function Citacoes() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Citações Memoráveis</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Citações Memoráveis</h1>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               Palavras que ecoam na estrada e tocam o coração. Cada frase carrega o peso de uma jornada, 
               a dor de uma escolha, ou a beleza de um momento compartilhado.
@@ -104,10 +104,10 @@ export default function Citacoes() {
                 <blockquote className="quote-special text-gray-800 mb-4">
                   {quote.text}
                 </blockquote>
-                <div className="border-t border-amber-200 pt-4 mt-4">
-                  <p className="font-bold text-amber-800 mb-2">— {quote.author}</p>
+                <div className="border-t border-orange-200 pt-4 mt-4">
+                  <p className="font-bold text-orange-800 mb-2">— {quote.author}</p>
                   <p className="text-gray-600 text-sm mb-1 italic">{quote.context}</p>
-                  <p className="text-amber-600 text-xs font-semibold">{quote.episode}</p>
+                  <p className="text-lis2-rust text-xs font-semibold">{quote.episode}</p>
                 </div>
               </motion.div>
             ))}
@@ -117,7 +117,7 @@ export default function Citacoes() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1 }}
-            className="mt-16 text-center bg-amber-100 p-8 rounded-lg"
+            className="mt-16 text-center bg-orange-100 p-8 rounded-lg"
           >
             <p className="text-lg text-gray-700 font-indie">
               "Cada palavra é uma semente plantada na estrada. Algumas florescem em memórias, 

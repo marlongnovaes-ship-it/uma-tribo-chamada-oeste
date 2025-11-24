@@ -10,7 +10,7 @@ export default function Blog() {
     <div className="min-h-screen">
       <Navbar />
       
-      <div className="pt-24 pb-20 bg-amber-50">
+      <div className="pt-24 pb-20 bg-orange-50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -18,7 +18,7 @@ export default function Blog() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Diário de Viagem</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Diário de Viagem</h1>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               Histórias da estrada, reflexões sobre liberdade, e encontros que mudam vidas.
             </p>
@@ -43,15 +43,15 @@ export default function Blog() {
                       />
                     </div>
                     <div className="p-6">
-                      <div className="flex items-center text-amber-600 mb-3">
+                      <div className="flex items-center text-lis2-rust mb-3">
                         <Calendar className="w-4 h-4 mr-2" />
                         <span className="text-sm">{post.date}</span>
                       </div>
-                      <h2 className="text-2xl font-bold mb-3 text-amber-900 hover:text-amber-700 transition-colors">
+                      <h2 className="text-2xl font-bold mb-3 text-orange-900 hover:text-lis2-rust transition-colors">
                         {post.title}
                       </h2>
                       <p className="text-gray-700 mb-4">{post.excerpt}</p>
-                      <span className="text-amber-600 font-semibold hover:text-amber-700">
+                      <span className="text-lis2-rust font-semibold hover:text-lis2-rust">
                         Ler mais →
                       </span>
                     </div>

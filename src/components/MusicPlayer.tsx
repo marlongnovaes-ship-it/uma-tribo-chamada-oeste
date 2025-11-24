@@ -33,7 +33,7 @@ export default function MusicPlayer() {
     <div className="fixed bottom-6 right-6 z-50">
       <button
         onClick={togglePlay}
-        className="bg-amber-600 hover:bg-amber-700 text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center gap-2 group"
+        className="bg-lis2-rust hover:bg-lis2-rust text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 flex items-center gap-2 group"
         title={isPlaying ? "Pausar música" : "Tocar música"}
       >
         {isPlaying ? (

@@ -131,12 +131,12 @@ const moodColors = {
   sad: 'from-blue-100 to-blue-50',
   hopeful: 'from-green-100 to-green-50',
   angry: 'from-red-100 to-red-50',
-  nostalgic: 'from-amber-100 to-amber-50'
+  nostalgic: 'from-orange-100 to-orange-50'
 };
 
 export default function Cartas() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-orange-50">
       <Navbar />
       
       <div className="pt-24 pb-20">
@@ -148,9 +148,9 @@ export default function Cartas() {
             className="text-center mb-16"
           >
             <div className="flex justify-center mb-6">
-              <Mail className="w-16 h-16 text-amber-600" />
+              <Mail className="w-16 h-16 text-lis2-rust" />
             </div>
-            <h1 className="text-5xl font-bold mb-6 text-amber-900">Cartas Não Enviadas</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">Cartas Não Enviadas</h1>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               Palavras que nunca chegaram ao destino. Sentimentos guardados em papel amarelado. 
               Mensagens escritas com o coração, mas nunca entregues.
