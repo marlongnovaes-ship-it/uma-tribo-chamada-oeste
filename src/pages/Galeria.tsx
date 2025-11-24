@@ -93,14 +93,14 @@ export default function Galeria() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="polaroid-effect cursor-pointer group lis2-card animate-in"
+                className="polaroid-effect cursor-pointer group lis2-card animate-in dynamic-shadow reflection-effect"
                 onClick={() => setSelectedDrawing(drawing)}
               >
                 <div className="overflow-hidden rounded">
                   <img 
                     src={drawing.image} 
                     alt={drawing.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 image-reflection"
                   />
                 </div>
                 <div className="mt-4 text-center">

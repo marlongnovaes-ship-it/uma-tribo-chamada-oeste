@@ -9,7 +9,7 @@ export default function Sobre() {
       
       <div className="pt-24 pb-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <motion.div className="vintage-paper diary-page rounded-lg"
+          <motion.div className="vintage-paper diary-page rounded-lg ambient-lighting"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

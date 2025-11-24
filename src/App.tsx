@@ -12,11 +12,15 @@ import Galeria from './pages/Galeria';
 import Escolhas from './pages/Escolhas';
 import Tatuagem from './pages/Tatuagem';
 import MusicPlayer from './components/MusicPlayer';
+import RainEffect from './components/RainEffect';
+import LightningEffect from './components/LightningEffect';
 
 // Última atualização: 2025-11-23 14:15
 export default function App() {
   return (
     <>
+      <RainEffect />
+      <LightningEffect />
       <MusicPlayer />
       <Switch>
       <Route path="/" component={Home} />

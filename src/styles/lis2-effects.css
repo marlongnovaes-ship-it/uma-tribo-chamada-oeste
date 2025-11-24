@@ -311,3 +311,203 @@
   pointer-events: none;
 }
 /* Updated: Mon Nov 24 08:25:49 EST 2025 */
+
+/* ====================================
+   EFEITOS DRAMÁTICOS CINEMATOGRÁFICOS
+   ==================================== */
+
+/* SOMBRAS DINÂMICAS */
+@keyframes shadow-move {
+  0%, 100% {
+    box-shadow: 
+      -10px 10px 30px rgba(0, 0, 0, 0.3),
+      -20px 20px 60px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 
+      10px 10px 30px rgba(0, 0, 0, 0.3),
+      20px 20px 60px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.dynamic-shadow {
+  animation: shadow-move 8s ease-in-out infinite;
+}
+
+/* Sombra de texto que se move */
+@keyframes text-shadow-move {
+  0%, 100% {
+    text-shadow: 
+      -2px 2px 4px rgba(0, 0, 0, 0.5),
+      -4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.5),
+      4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.dynamic-text-shadow {
+  animation: text-shadow-move 6s ease-in-out infinite;
+}
+
+/* REFLEXOS EM SUPERFÍCIES */
+.reflection-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.reflection-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: reflection-shine 8s ease-in-out infinite;
+}
+
+@keyframes reflection-shine {
+  0%, 90%, 100% {
+    left: -100%;
+  }
+  45%, 55% {
+    left: 150%;
+  }
+}
+
+/* Reflexo em imagens */
+.image-reflection {
+  position: relative;
+}
+
+.image-reflection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: image-glare 10s ease-in-out infinite;
+}
+
+@keyframes image-glare {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Superfície molhada (efeito de chuva) */
+.wet-surface {
+  position: relative;
+}
+
+.wet-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(transparent 50%, rgba(255,255,255,0.05) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.05) 50%);
+  background-size: 4px 4px;
+  pointer-events: none;
+  opacity: 0.6;
+  animation: rain-shimmer 2s ease-in-out infinite;
+}
+
+@keyframes rain-shimmer {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Efeito de vidro molhado */
+.glass-wet {
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.glass-wet::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 1px, transparent 1px),
+    radial-gradient(circle at 60% 70%, rgba(255,255,255,0.3) 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.3) 1px, transparent 1px),
+    radial-gradient(circle at 40% 90%, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 100% 100%;
+  pointer-events: none;
+  animation: droplet-move 4s ease-in-out infinite;
+}
+
+@keyframes droplet-move {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.7;
+  }
+}
+
+/* Sombra projetada dinâmica (como se houvesse uma luz se movendo) */
+.projected-shadow {
+  position: relative;
+}
+
+.projected-shadow::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.4), transparent);
+  animation: shadow-breathe 4s ease-in-out infinite;
+}
+
+@keyframes shadow-breathe {
+  0%, 100% {
+    width: 80%;
+    opacity: 0.4;
+  }
+  50% {
+    width: 90%;
+    opacity: 0.6;
+  }
+}
+
+/* Efeito de luz ambiente mudando */
+@keyframes ambient-light {
+  0%, 100% {
+    filter: brightness(1) contrast(1);
+  }
+  50% {
+    filter: brightness(1.1) contrast(1.05);
+  }
+}
+
+.ambient-lighting {
+  animation: ambient-light 12s ease-in-out infinite;
+}

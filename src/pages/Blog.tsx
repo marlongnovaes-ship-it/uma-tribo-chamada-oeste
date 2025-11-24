@@ -31,7 +31,7 @@ export default function Blog() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg overflow-hidden sketch-border lis2-card watercolor-transition"
+                className="bg-white rounded-lg shadow-lg overflow-hidden sketch-border lis2-card watercolor-transition reflection-effect dynamic-shadow"
               >
                 <Link href={`/blog/${post.slug}`}>
                   <a className="block">
