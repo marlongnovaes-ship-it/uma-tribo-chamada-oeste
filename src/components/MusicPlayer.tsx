@@ -45,7 +45,7 @@ export default function MusicPlayer() {
         
         {/* Tooltip */}
         <span className="absolute bottom-full right-0 mb-2 bg-gray-800 text-white text-xs px-3 py-2 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-          {isPlaying ? "Pausar" : "Tocar"} "I Found A Way"
+          {isPlaying ? "Pausar" : "Tocar"} "Life is Strange 2 OST"
         </span>
       </button>
 
@@ -55,8 +55,7 @@ export default function MusicPlayer() {
         loop
         preload="none"
       >
-        {/* Link do YouTube convertido para áudio - você pode usar um serviço de conversão ou hospedar o arquivo */}
-        <source src="https://www.youtube.com/watch?v=i9vJ55Qesrk" type="audio/mpeg" />
+        <source src="/music/lis2-soundtrack.mp3" type="audio/mpeg" />
       </audio>
 
       {/* Indicador visual quando tocando */}
