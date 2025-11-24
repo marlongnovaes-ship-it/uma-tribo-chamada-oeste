@@ -7,6 +7,33 @@ import Footer from '../components/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen wolf-cursor">
+      {/* Schema.org JSON-LD para SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Uma Tribo Chamada Oeste",
+          "url": "https://uma-tribo-chamada-oeste.vercel.app",
+          "description": "Site de fã dedicado a Life is Strange 2. Explore a jornada emocionante dos irmãos Sean e Daniel Diaz.",
+          "inLanguage": "pt-BR",
+          "author": {
+            "@type": "Person",
+            "name": "Marlon Novaes"
+          },
+          "about": {
+            "@type": "VideoGame",
+            "name": "Life is Strange 2",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Square Enix"
+            },
+            "developer": {
+              "@type": "Organization",
+              "name": "Dontnod Entertainment"
+            }
+          }
+        })}
+      </script>
       <Navbar />
       
       {/* Hero Section */}

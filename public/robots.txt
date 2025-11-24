@@ -1,0 +1,11 @@
+# Robots.txt para Uma Tribo Chamada Oeste
+# Permitir todos os robôs de busca
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://uma-tribo-chamada-oeste.vercel.app/sitemap.xml
+
+# Crawl-delay (opcional, para não sobrecarregar o servidor)
+Crawl-delay: 1
