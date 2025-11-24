@@ -38,7 +38,7 @@ export default function Home() {
               </a>
             </Link>
             <Link href="/sobre">
-              <a className="choice-button inline-block" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));">
+              <a className="choice-button inline-block" style={{background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1))'}}>
                 Sobre Nós
               </a>
             </Link>

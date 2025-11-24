@@ -147,7 +147,7 @@ export default function Escolhas() {
                   {/* Opções */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     {/* Opção A */}
-                    <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-6 choice-button" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.1));">
+                    <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-6 choice-button" style={{background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.1))'}}>
                       <div className="flex items-center gap-2 mb-3">
                         <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
                           A
@@ -160,7 +160,7 @@ export default function Escolhas() {
                     </div>
 
                     {/* Opção B */}
-                    <div className="bg-amber-50 border-2 border-amber-300 rounded-lg p-6 choice-button" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.1));">
+                    <div className="bg-amber-50 border-2 border-amber-300 rounded-lg p-6 choice-button" style={{background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.1))'}}>
                       <div className="flex items-center gap-2 mb-3">
                         <div className="w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center font-bold">
                           B
