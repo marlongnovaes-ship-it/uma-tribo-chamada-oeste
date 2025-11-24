@@ -1,4 +1,5 @@
 import { Route, Switch } from 'wouter';
+import './styles/lis2-effects.css';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';

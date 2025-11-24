@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen wolf-cursor">
       <Navbar />
       
       {/* Hero Section */}
@@ -23,9 +23,9 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 text-center px-4"
+          className="relative z-10 text-center px-4 magic-particles"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch-effect">
             Uma Tribo Chamada Oeste
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
@@ -33,12 +33,12 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog">
-              <a className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block">
+              <a className="choice-button inline-block">
                 Ler o Blog
               </a>
             </Link>
             <Link href="/sobre">
-              <a className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block">
+              <a className="choice-button inline-block" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));">
                 Sobre Nós
               </a>
             </Link>
@@ -151,7 +151,7 @@ export default function Home() {
               Explore os posts do blog e descubra as histórias que moldaram a filosofia de viver livre na estrada.
             </p>
             <Link href="/blog">
-              <a className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block">
+              <a className="choice-button inline-block">
                 Começar a Ler
               </a>
             </Link>

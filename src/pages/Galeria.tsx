@@ -93,7 +93,7 @@ export default function Galeria() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="polaroid cursor-pointer group"
+                className="polaroid-effect cursor-pointer group lis2-card animate-in"
                 onClick={() => setSelectedDrawing(drawing)}
               >
                 <div className="overflow-hidden rounded">
