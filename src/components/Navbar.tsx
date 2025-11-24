@@ -15,6 +15,7 @@ export default function Navbar() {
     { href: '/citacoes', label: 'Citações' },
     { href: '/cartas', label: 'Cartas' },
     { href: '/sobre', label: 'Sobre' },
+    { href: '/contato', label: 'Contato' },
   ];
 
   const closeMenu = () => setIsOpen(false);

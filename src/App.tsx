@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Sobre from './pages/Sobre';
+import Contato from './pages/Contato';
 
 import Citacoes from './pages/Citacoes';
 import Cartas from './pages/Cartas';
@@ -31,6 +32,7 @@ export default function App() {
       <Route path="/citacoes" component={Citacoes} />
       <Route path="/cartas" component={Cartas} />
       <Route path="/sobre" component={Sobre} />
+      <Route path="/contato" component={Contato} />
       <Route>
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
