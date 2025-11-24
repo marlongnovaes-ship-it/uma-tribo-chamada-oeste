@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Uma Tribo Chamada Oeste',
 
-  projectId: 'vkwaywgz',
+  projectId: '8bmpz2jt',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],

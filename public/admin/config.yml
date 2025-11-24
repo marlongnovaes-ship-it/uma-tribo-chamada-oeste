@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: marlongnovaes-ship-it/uma-tribo-chamada-oeste
+  branch: main
+
+media_folder: "public/images/posts"
+public_folder: "/images/posts"
+
+collections:
+  - name: "blog"
+    label: "Posts do Blog"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Data de Publicação", name: "date", widget: "datetime"}
+      - {label: "Imagem Destaque", name: "image", widget: "image", required: false}
+      - {label: "Resumo", name: "excerpt", widget: "text"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+      - {label: "Publicado", name: "published", widget: "boolean", default: false}
