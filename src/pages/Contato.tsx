@@ -1,9 +1,11 @@
 import { useState, type FormEvent } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Send, Mail, User, MessageSquare, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function Contato() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -45,7 +47,7 @@ export default function Contato() {
       }
     } catch (error) {
       setStatus('error');
-      setErrorMessage('Não foi possível enviar sua mensagem. Por favor, tente novamente ou envie um email diretamente para xvmarlon@gmail.com');
+      setErrorMessage(t('contact.errorMessage'));
       console.error('Erro:', error);
     }
   };
@@ -61,11 +63,10 @@ export default function Contato() {
             <Mail className="w-16 h-16 text-amber-700" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-amber-900 mb-4 font-serif">
-            Entre em Contato
+            {t('contact.title')}
           </h1>
           <p className="text-lg text-amber-800 max-w-2xl mx-auto">
-            Gostou do site? Tem alguma sugestão ou quer compartilhar suas reflexões sobre Life is Strange 2? 
-            Envie uma mensagem e vamos conversar sobre essa jornada emocionante.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -77,7 +78,7 @@ export default function Contato() {
               <div>
                 <label htmlFor="nome" className="flex items-center text-amber-900 font-semibold mb-2">
                   <User className="w-5 h-5 mr-2" />
-                  Seu Nome
+                  {t('contact.nameLabel')}
                 </label>
                 <input
                   type="text"
@@ -86,7 +87,7 @@ export default function Contato() {
                   value={formData.nome}
                   onChange={(e) => setFormData({ ...formData, nome: e.target.value })}
                   className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none transition-colors"
-                  placeholder="Como você se chama?"
+                  placeholder={t('contact.namePlaceholder')}
                   disabled={status === 'sending'}
                 />
               </div>
@@ -95,7 +96,7 @@ export default function Contato() {
               <div>
                 <label htmlFor="email" className="flex items-center text-amber-900 font-semibold mb-2">
                   <Mail className="w-5 h-5 mr-2" />
-                  Seu Email
+                  {t('contact.emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -104,7 +105,7 @@ export default function Contato() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none transition-colors"
-                  placeholder="seu@email.com"
+                  placeholder={t('contact.emailPlaceholder')}
                   disabled={status === 'sending'}
                 />
               </div>
@@ -113,7 +114,7 @@ export default function Contato() {
               <div>
                 <label htmlFor="mensagem" className="flex items-center text-amber-900 font-semibold mb-2">
                   <MessageSquare className="w-5 h-5 mr-2" />
-                  Sua Mensagem
+                  {t('contact.messageLabel')}
                 </label>
                 <textarea
                   id="mensagem"
@@ -122,7 +123,7 @@ export default function Contato() {
                   value={formData.mensagem}
                   onChange={(e) => setFormData({ ...formData, mensagem: e.target.value })}
                   className="w-full px-4 py-3 border-2 border-amber-200 rounded-lg focus:border-amber-500 focus:outline-none transition-colors resize-none"
-                  placeholder="Compartilhe seus pensamentos, sugestões ou reflexões..."
+                  placeholder={t('contact.messagePlaceholder')}
                   disabled={status === 'sending'}
                 />
               </div>
@@ -131,14 +132,14 @@ export default function Contato() {
               {status === 'success' && (
                 <div className="flex items-center gap-2 p-4 bg-green-100 border-2 border-green-500 rounded-lg text-green-800 animate-fadeIn">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                  <p className="font-semibold">Mensagem enviada com sucesso! Obrigado pelo contato.</p>
+                  <p className="font-semibold">{t('contact.successMessage')}</p>
                 </div>
               )}
 
               {status === 'error' && (
                 <div className="flex items-start gap-2 p-4 bg-red-100 border-2 border-red-500 rounded-lg text-red-800 animate-fadeIn">
                   <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <p>{errorMessage}</p>
+                  <p>{errorMessage} xvmarlon@gmail.com</p>
                 </div>
               )}
 
@@ -151,12 +152,12 @@ export default function Contato() {
                 {status === 'sending' ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                    Enviando...
+                    {t('contact.sending')}
                   </>
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    Enviar Mensagem
+                    {t('contact.sendButton')}
                   </>
                 )}
               </button>
@@ -166,7 +167,7 @@ export default function Contato() {
           {/* Informação Adicional */}
           <div className="mt-8 text-center text-amber-800 animate-fadeIn">
             <p className="text-sm">
-              Você também pode enviar um email diretamente para:{' '}
+              {t('contact.directEmail')}{' '}
               <a 
                 href="mailto:xvmarlon@gmail.com" 
                 className="font-semibold text-amber-900 hover:text-amber-700 underline"

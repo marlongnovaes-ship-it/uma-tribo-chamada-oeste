@@ -1,24 +1,32 @@
 import { useState } from 'react';
 import { Link } from 'wouter';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
-  // Menu atualizado - versão 2.0
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const links = [
-    { href: '/', label: 'Início' },
-    { href: '/blog', label: 'Diário' },
-    { href: '/galeria', label: 'Galeria' },
-    { href: '/escolhas', label: 'Escolhas' },
-    { href: '/tatuagem', label: 'Tatuagem' },
-    { href: '/citacoes', label: 'Citações' },
-    { href: '/cartas', label: 'Cartas' },
-    { href: '/sobre', label: 'Sobre' },
-    { href: '/contato', label: 'Contato' },
+    { href: '/', label: t('nav.home') },
+    { href: '/blog', label: t('nav.blog') },
+    { href: '/galeria', label: t('nav.gallery') },
+    { href: '/escolhas', label: t('nav.choices') },
+    { href: '/tatuagem', label: t('nav.tattoo') },
+    { href: '/citacoes', label: t('nav.quotes') },
+    { href: '/cartas', label: t('nav.letters') },
+    { href: '/sobre', label: t('nav.about') },
+    { href: '/contato', label: t('nav.contact') },
   ];
 
   const closeMenu = () => setIsOpen(false);
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
+    i18n.changeLanguage(newLang);
+  };
+
+  const currentLang = i18n.language === 'pt' ? 'PT' : 'EN';
 
   return (
     <nav className="fixed top-0 w-full bg-amber-900/95 backdrop-blur-sm text-amber-50 z-50 shadow-lg">
@@ -27,7 +35,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <a className="text-lg md:text-xl font-bold hover:text-orange-200 transition-colors" onClick={closeMenu}>
-              Uma Tribo Chamada Oeste
+              {t('home.title')}
             </a>
           </Link>
 
@@ -40,20 +48,42 @@ export default function Navbar() {
                 </a>
               </Link>
             ))}
+            
+            {/* Language Toggle Button - Desktop */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 px-3 py-1.5 bg-amber-800 hover:bg-amber-700 rounded-lg transition-colors text-sm font-medium"
+              aria-label="Change language"
+            >
+              <Globe className="w-4 h-4" />
+              {currentLang}
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 hover:bg-amber-800 rounded transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            {/* Language Toggle Button - Mobile */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 px-2 py-1 bg-amber-800 hover:bg-amber-700 rounded transition-colors text-xs font-medium"
+              aria-label="Change language"
+            >
+              <Globe className="w-4 h-4" />
+              {currentLang}
+            </button>
+            
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 hover:bg-amber-800 rounded transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

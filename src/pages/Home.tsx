@@ -1,10 +1,13 @@
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import { BookOpen, MapPin, Users } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen wolf-cursor">
       {/* Schema.org JSON-LD para SEO */}
@@ -53,20 +56,20 @@ export default function Home() {
           className="relative z-10 text-center px-4 magic-particles"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 glitch-effect dynamic-text-shadow">
-            Uma Tribo Chamada Oeste
+            {t('home.title')}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            Histórias da estrada. Encontros que mudam vidas. A jornada nunca termina.
+            {t('home.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog">
               <a className="choice-button inline-block">
-                Ler o Blog
+                {t('home.readBlog')}
               </a>
             </Link>
             <Link href="/sobre">
               <a className="choice-button inline-block" style={{background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1))'}}>
-                Sobre Nós
+                {t('home.aboutUs')}
               </a>
             </Link>
           </div>
@@ -83,14 +86,12 @@ export default function Home() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-4xl font-bold mb-6 text-orange-900">A Estrada Nunca Termina</h2>
+            <h2 className="text-4xl font-bold mb-6 text-orange-900">{t('home.sectionTitle')}</h2>
             <p className="text-lg text-gray-700 mb-4">
-              Este blog é sobre liberdade, encontros inesperados e as histórias que encontramos pelo caminho. 
-              Inspirado nas viagens de Brody Holloway e Cassidy, dois espíritos livres que escolheram a estrada como lar.
+              {t('home.sectionDesc')}
             </p>
             <p className="text-lg text-gray-700">
-              Aqui você encontrará relatos de viagens, reflexões sobre comunidades alternativas, 
-              e a filosofia de que tudo é político quando você vive com os olhos abertos.
+              {t('home.sectionDesc2')}
             </p>
           </motion.div>
         </div>
@@ -108,9 +109,9 @@ export default function Home() {
               className="bg-white p-8 rounded-lg shadow-lg text-center"
             >
               <BookOpen className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-orange-900">Blog de Viagens</h3>
+              <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.blogTitle')}</h3>
               <p className="text-gray-700">
-                Histórias autênticas da estrada, escritas com o coração e a honestidade de quem vive cada momento.
+                {t('home.blogDesc')}
               </p>
             </motion.div>
 
@@ -122,9 +123,9 @@ export default function Home() {
               className="bg-white p-8 rounded-lg shadow-lg text-center"
             >
               <MapPin className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-orange-900">Lugares Reais</h3>
+              <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.placesTitle')}</h3>
               <p className="text-gray-700">
-                De Coffeyville a Humboldt County, cada local tem uma história e uma lição para ensinar.
+                {t('home.placesDesc')}
               </p>
             </motion.div>
 
@@ -136,9 +137,9 @@ export default function Home() {
               className="bg-white p-8 rounded-lg shadow-lg text-center"
             >
               <Users className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-orange-900">Pessoas Verdadeiras</h3>
+              <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.peopleTitle')}</h3>
               <p className="text-gray-700">
-                Conhecendo Brody, Cassidy e outros viajantes que escolheram viver fora do convencional.
+                {t('home.peopleDesc')}
               </p>
             </motion.div>
           </div>
@@ -156,8 +157,7 @@ export default function Home() {
             className="text-center max-w-4xl mx-auto"
           >
             <p className="text-2xl md:text-3xl italic mb-6">
-              "Tudo é político, Sean. O que você e seu irmão têm é a coisa mais importante. 
-              A estrada nunca termina."
+              "{t('home.quote')}"
             </p>
             <footer className="text-xl text-orange-200">— Brody Holloway</footer>
           </motion.blockquote>
@@ -173,13 +173,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-6 text-orange-900">Pronto para a Jornada?</h2>
+            <h2 className="text-4xl font-bold mb-6 text-orange-900">{t('home.ctaTitle')}</h2>
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-              Explore os posts do blog e descubra as histórias que moldaram a filosofia de viver livre na estrada.
+              {t('home.ctaDesc')}
             </p>
             <Link href="/blog">
               <a className="choice-button inline-block">
-                Começar a Ler
+                {t('home.startReading')}
               </a>
             </Link>
           </motion.div>
