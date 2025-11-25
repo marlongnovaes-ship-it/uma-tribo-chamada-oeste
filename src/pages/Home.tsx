@@ -4,6 +4,8 @@ import { BookOpen, MapPin, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import TelekineticEffect from '../components/TelekineticEffect';
+import FloatingObject from '../components/FloatingObject';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -101,47 +103,53 @@ export default function Home() {
       <section className="py-20 bg-orange-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-white p-8 rounded-lg shadow-lg text-center"
-            >
-              <BookOpen className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.blogTitle')}</h3>
-              <p className="text-gray-700">
-                {t('home.blogDesc')}
-              </p>
-            </motion.div>
+            <TelekineticEffect intensity="medium">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-lg shadow-lg text-center"
+              >
+                <BookOpen className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.blogTitle')}</h3>
+                <p className="text-gray-700">
+                  {t('home.blogDesc')}
+                </p>
+              </motion.div>
+            </TelekineticEffect>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white p-8 rounded-lg shadow-lg text-center"
-            >
-              <MapPin className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.placesTitle')}</h3>
-              <p className="text-gray-700">
-                {t('home.placesDesc')}
-              </p>
-            </motion.div>
+            <TelekineticEffect intensity="medium">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-lg shadow-lg text-center"
+              >
+                <MapPin className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.placesTitle')}</h3>
+                <p className="text-gray-700">
+                  {t('home.placesDesc')}
+                </p>
+              </motion.div>
+            </TelekineticEffect>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white p-8 rounded-lg shadow-lg text-center"
-            >
-              <Users className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.peopleTitle')}</h3>
-              <p className="text-gray-700">
-                {t('home.peopleDesc')}
-              </p>
-            </motion.div>
+            <TelekineticEffect intensity="medium">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 rounded-lg shadow-lg text-center"
+              >
+                <Users className="w-12 h-12 text-lis2-rust mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-4 text-orange-900">{t('home.peopleTitle')}</h3>
+                <p className="text-gray-700">
+                  {t('home.peopleDesc')}
+                </p>
+              </motion.div>
+            </TelekineticEffect>
           </div>
         </div>
       </section>
@@ -187,6 +195,13 @@ export default function Home() {
       </section>
 
       <Footer />
+      
+      {/* Objetos flutuantes aleatórios (poder do Daniel) */}
+      <FloatingObject emoji="🐺" delay={2} duration={5} />
+      <FloatingObject emoji="✨" delay={4} duration={4} />
+      <FloatingObject emoji="🍃" delay={6} duration={6} />
+      <FloatingObject emoji="🌲" delay={8} duration={5} />
+      <FloatingObject emoji="☀️" delay={10} duration={4} />
     </div>
   );
 }

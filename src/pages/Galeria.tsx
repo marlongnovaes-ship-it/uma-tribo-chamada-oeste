@@ -4,6 +4,7 @@ import { X, Palette } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import TelekineticEffect from '../components/TelekineticEffect';
 
 interface Drawing {
   id: number;
@@ -89,27 +90,28 @@ export default function Galeria() {
           {/* Grid de desenhos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {drawings.map((drawing, index) => (
-              <motion.div
-                key={drawing.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="polaroid-effect cursor-pointer group lis2-card animate-in dynamic-shadow reflection-effect"
-                onClick={() => setSelectedDrawing(drawing)}
-              >
-                <div className="overflow-hidden rounded">
-                  <img 
-                    src={drawing.image} 
-                    alt={drawing.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 image-reflection"
-                  />
-                </div>
-                <div className="mt-4 text-center">
-                  <h3 className="font-bold text-lg text-gray-800 mb-1">{drawing.title}</h3>
-                  <p className="text-sm text-lis2-rust font-semibold">{drawing.location}</p>
-                  <p className="text-xs text-gray-500 mt-2 italic">{drawing.emotion}</p>
-                </div>
-              </motion.div>
+              <TelekineticEffect key={drawing.id} intensity="low">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="polaroid-effect cursor-pointer group lis2-card animate-in dynamic-shadow reflection-effect"
+                  onClick={() => setSelectedDrawing(drawing)}
+                >
+                  <div className="overflow-hidden rounded">
+                    <img 
+                      src={drawing.image} 
+                      alt={drawing.title}
+                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 image-reflection"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <h3 className="font-bold text-lg text-gray-800 mb-1">{drawing.title}</h3>
+                    <p className="text-sm text-lis2-rust font-semibold">{drawing.location}</p>
+                    <p className="text-xs text-gray-500 mt-2 italic">{drawing.emotion}</p>
+                  </div>
+                </motion.div>
+              </TelekineticEffect>
             ))}
           </div>
 
