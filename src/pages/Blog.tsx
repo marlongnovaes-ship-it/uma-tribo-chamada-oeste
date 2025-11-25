@@ -1,11 +1,14 @@
 import { Link } from 'wouter';
 import { motion } from 'framer-motion';
 import { Calendar } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { posts } from '../data/posts';
 
 export default function Blog() {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -18,9 +21,9 @@ export default function Blog() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl font-bold mb-6 text-orange-900">Diário de Viagem</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">{t('blog.title')}</h1>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              Histórias da estrada, reflexões sobre liberdade, e encontros que mudam vidas.
+              {t('blog.subtitle')}
             </p>
           </motion.div>
 
@@ -52,7 +55,7 @@ export default function Blog() {
                       </h2>
                       <p className="text-gray-700 mb-4">{post.excerpt}</p>
                       <span className="text-lis2-rust font-semibold hover:text-lis2-rust">
-                        Ler mais →
+                        {t('blog.readMore')} →
                       </span>
                     </div>
                   </a>

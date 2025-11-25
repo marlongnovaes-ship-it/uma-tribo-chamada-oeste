@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Palette } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -57,6 +58,7 @@ const drawings: Drawing[] = [
 ];
 
 export default function Galeria() {
+  const { t } = useTranslation();
   const [selectedDrawing, setSelectedDrawing] = useState<Drawing | null>(null);
 
   return (
@@ -74,10 +76,9 @@ export default function Galeria() {
             <div className="flex justify-center mb-6">
               <Palette className="w-16 h-16 text-lis2-rust" />
             </div>
-            <h1 className="text-5xl font-bold mb-6 text-orange-900">Galeria de Arte do Sean</h1>
+            <h1 className="text-5xl font-bold mb-6 text-orange-900">{t('gallery.title')}</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-4">
-              Através dos olhos de um artista em fuga. Cada desenho é uma janela para os sentimentos, 
-              memórias e momentos que definiram a jornada de Sean e Daniel.
+              {t('gallery.subtitle')}
             </p>
             <p className="text-lg font-handwriting text-orange-800 italic">
               "Desenhar é minha forma de processar tudo que aconteceu. É como se, ao colocar no papel, 
@@ -121,17 +122,7 @@ export default function Galeria() {
           >
             <h3 className="text-2xl font-bold text-orange-900 mb-4">Nota do Artista</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Meu sketchbook é mais que um caderno de desenhos. É meu diário, meu terapeuta, 
-              meu refúgio. Quando tudo ao redor está caótico, quando não sei o que fazer, 
-              eu desenho.
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Cada página conta uma história. Algumas são dolorosas demais para revisitar. 
-              Outras me fazem sorrir, mesmo nos dias mais difíceis. Mas todas são parte de quem eu sou.
-            </p>
-            <p className="text-gray-700 leading-relaxed font-semibold">
-              Papai sempre dizia que a arte é a forma mais honesta de se expressar. 
-              Acho que ele estava certo.
+              {t('gallery.note')}
             </p>
             <p className="text-right text-orange-800 font-handwriting text-xl mt-4">
               — Sean Diaz
@@ -154,44 +145,34 @@ export default function Galeria() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto"
+              className="max-w-4xl w-full bg-white rounded-lg overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="sticky top-0 bg-white border-b border-gray-200 p-4 flex justify-between items-center">
-                <h3 className="text-2xl font-bold text-gray-800">{selectedDrawing.title}</h3>
+              <div className="relative">
                 <button
                   onClick={() => setSelectedDrawing(null)}
-                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  className="absolute top-4 right-4 bg-white/90 hover:bg-white p-2 rounded-full transition-colors z-10"
+                  aria-label={t('gallery.close')}
                 >
-                  <X className="w-6 h-6" />
+                  <X className="w-6 h-6 text-gray-800" />
                 </button>
-              </div>
-              
-              <div className="p-6">
                 <img 
                   src={selectedDrawing.image} 
                   alt={selectedDrawing.title}
-                  className="w-full rounded-lg mb-6"
+                  className="w-full h-auto max-h-[70vh] object-contain"
                 />
-                
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm text-lis2-rust font-semibold mb-1">Local</p>
-                    <p className="text-gray-700">{selectedDrawing.location}</p>
-                  </div>
-                  
-                  <div>
-                    <p className="text-sm text-lis2-rust font-semibold mb-1">Emoção</p>
-                    <p className="text-gray-700">{selectedDrawing.emotion}</p>
-                  </div>
-                  
-                  <div>
-                    <p className="text-sm text-lis2-rust font-semibold mb-1">Sobre o desenho</p>
-                    <p className="text-gray-700 leading-relaxed font-journal text-lg">
-                      {selectedDrawing.description}
-                    </p>
-                  </div>
+              </div>
+              <div className="p-6">
+                <h2 className="text-3xl font-bold text-orange-900 mb-2">{selectedDrawing.title}</h2>
+                <div className="flex gap-4 text-sm text-gray-600 mb-4">
+                  <span className="flex items-center gap-1">
+                    <strong>{t('gallery.location')}:</strong> {selectedDrawing.location}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <strong>{t('gallery.emotion')}:</strong> {selectedDrawing.emotion}
+                  </span>
                 </div>
+                <p className="text-gray-700 leading-relaxed">{selectedDrawing.description}</p>
               </div>
             </motion.div>
           </motion.div>
