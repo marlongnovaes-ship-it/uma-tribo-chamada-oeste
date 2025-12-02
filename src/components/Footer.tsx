@@ -1,11 +1,15 @@
 import { useTranslation } from 'react-i18next';
+import VisitorCounter from './VisitorCounter';
 
 export default function Footer() {
   const { t } = useTranslation();
   
   return (
     <footer className="bg-amber-900 text-amber-50 py-8 mt-20">
-      <div className="container mx-auto px-4 text-center space-y-4">
+      <div className="container mx-auto px-4 text-center space-y-6">
+        <div className="flex justify-center mb-6">
+          <VisitorCounter />
+        </div>
         <h3 className="text-xl font-bold">{t('footer.title')} © {t('footer.year')}</h3>
         <p className="text-orange-200">
           {t('footer.fanTribute')}

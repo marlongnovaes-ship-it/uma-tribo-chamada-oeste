@@ -14,6 +14,7 @@ import Escolhas from './pages/Escolhas';
 import Tatuagem from './pages/Tatuagem';
 import MusicPlayer from './components/MusicPlayer';
 import LightningEffect from './components/LightningEffect';
+import WolfEasterEgg from './components/WolfEasterEgg';
 
 // Última atualização: 2025-11-23 14:15
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
     <>
       <LightningEffect />
       <MusicPlayer />
+      <WolfEasterEgg />
       <Switch>
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
