@@ -1,10 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WolfEasterEgg() {
   const [clickCount, setClickCount] = useState(0);
   const [showSecret, setShowSecret] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [isDiscovered, setIsDiscovered] = useState(false);
+
+  // Verificar se o easter egg já foi descoberto
+  useEffect(() => {
+    const discovered = localStorage.getItem('wolfEasterEggDiscovered');
+    if (discovered === 'true') {
+      setIsDiscovered(true);
+    }
+  }, []);
 
   const handleClick = () => {
     const newCount = clickCount + 1;
@@ -17,6 +26,10 @@ export default function WolfEasterEgg() {
 
     if (newCount === 3) {
       setShowSecret(true);
+      // Marcar como descoberto no localStorage
+      localStorage.setItem('wolfEasterEggDiscovered', 'true');
+      setIsDiscovered(true);
+      
       // Resetar após 10 segundos
       setTimeout(() => {
         setShowSecret(false);
@@ -24,6 +37,11 @@ export default function WolfEasterEgg() {
       }, 10000);
     }
   };
+
+  // Se já foi descoberto, não renderizar nada
+  if (isDiscovered && !showSecret) {
+    return null;
+  }
 
   return (
     <>
